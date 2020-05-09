@@ -16,7 +16,6 @@ function DocView:draw_line_text(idx, x, y)
     if s then
       local x1 = x + self:get_col_x_offset(idx, s)
       local x2 = x + self:get_col_x_offset(idx, e + 1)
-
       renderer.draw_rect(x1, y, x2 - x1, self:get_line_height(), val)
     end
   end
